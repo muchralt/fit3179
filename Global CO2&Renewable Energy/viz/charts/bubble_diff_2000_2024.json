@@ -1,0 +1,161 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "% Difference in CO2 emissions (yr vs yr-1) — tightly packed bubbles",
+  "autosize": { "type": "fit", "resize": true, "contains": "padding" },
+  "padding": { "top": 12, "right": 12, "bottom": 12, "left": 12 },
+
+  "signals": [
+    { "name": "yr", "value": 2023,
+      "bind": { "input": "range", "min": 2000, "max": 2023, "step": 1, "name": "year: " } },
+    { "name": "boundPad", "value": 8 },
+    { "name": "minR", "value": 20 },
+    { "name": "maxR", "value": 100 },
+    { "name": "gap",  "value": -2 },
+    { "name": "collideStrength", "value": 0.002 },
+    { "name": "cw", "update": "containerSize()[0]" },
+    { "name": "w",  "update": "floor(cw * 0.92)" },
+    { "name": "h",  "update": "min(420, ceil(w * 0.95))" },       
+    { "name": "legendGap", "value": 8 },          
+    { "name": "legendBlock", "value": 32 },         
+    { "name": "innerW", "update": "w - (legendBlock + legendGap)" } 
+
+  ],
+  "width":  { "signal": "w" },
+  "height": 420,
+
+  "data": [
+
+    {
+      "name": "curr",
+      "url": "data/co2_emission.csv",
+      "format": { "type": "csv" },
+      "transform": [
+        { "type": "formula", "as": "em", "expr": "toNumber(datum.emissions)" },
+        { "type": "filter", "expr": "isValid(datum.em) && toNumber(datum.year) == yr" }
+      ]
+    },
+
+
+    {
+      "name": "prev",
+      "url": "data/co2_emission.csv",
+      "format": { "type": "csv" },
+      "transform": [
+        { "type": "formula", "as": "pem", "expr": "toNumber(datum.emissions)" },
+        { "type": "filter", "expr": "isValid(datum.pem) && toNumber(datum.year) == yr - 1" },
+        { "type": "project", "fields": ["iso", "pem"] }
+      ]
+    },
+
+
+    {
+      "name": "raw",
+      "source": "curr",
+      "transform": [
+        { "type": "lookup", "from": "prev", "key": "iso", "fields": ["iso"], "values": ["pem"], "as": ["prev_em"] },
+
+
+        { "type": "formula", "as": "pct",
+          "expr": "isValid(datum.prev_em) && datum.prev_em > 0 ? datum.em / datum.prev_em - 1 : 0" },
+        { "type": "formula", "as": "abs_pct", "expr": "abs(datum.pct)" },
+
+ 
+        { "type": "window", "sort": {"field": "abs_pct", "order": "descending"}, "ops": ["rank"], "as": ["rk_abs"] },
+        { "type": "filter", "expr": "datum.rk_abs <= 10" },
+
+
+        { "type": "joinaggregate", "fields": ["abs_pct","abs_pct"], "ops": ["min","max"], "as": ["pmin","pmax"] },
+        { "type": "formula", "as": "radius",
+          "expr": "minR + (datum.pmax > datum.pmin ? (datum.abs_pct - datum.pmin) / max(1e-12, datum.pmax - datum.pmin) : 0) * (maxR - minR)" },
+        { "type": "formula", "as": "prevYear",   "expr": "yr - 1" },
+        { "type": "formula", "as": "pctLabel",
+          "expr": "(isValid(datum.prev_em) && datum.prev_em > 0) ? format(datum.pct, '+.1%') : 'n/a'" }
+      ]
+    },
+
+
+    {
+      "name": "nodes",
+      "source": "raw",
+      "transform": [
+        {
+          "type": "force",
+          "iterations": 200,
+          "forces": [
+            { "force": "center", "x": { "signal": "width/2" }, "y": { "signal": "height/2" } },
+            { "force": "collide", "iterations": 5, "strength": { "signal": "collideStrength" },
+              "radius": { "expr": "datum.radius + gap" } }
+          ],
+          "static": true
+        }
+      ]
+    }
+  ],
+
+  "scales": [
+   
+    { "name": "zcolor", "type": "linear",
+      "domain": { "data": "raw", "field": "pct" },
+      "domainMid": 0,
+      "range": ["#2c7bb6", "#f7f7f7", "#d73027"],  
+      "interpolate": "hcl" }
+  ],
+  "legends": [
+  {
+    "fill": "zcolor",
+    "orient": "top-left",
+    "gradientLength": 100,
+    "gradientThickness": 10,
+    "direction": "vertical",
+    "format": "+.0%",                   
+    "values": [ 0],
+    "zindex": 0, 
+    "encode": {
+      "legend": { "update": {
+        "x": { "signal": "innerW" },   
+        "y": { "value": 12 }
+      }}
+        }
+}
+],
+
+
+  "marks": [
+    {
+      "type": "symbol",
+      "from": { "data": "nodes" },
+      "encode": {
+        "enter": { "stroke": { "value": "#fff" }, "strokeWidth": { "value": 1 } },
+        "update": {
+          "x": { "field": "x" },
+          "y": { "field": "y" },
+          "size": { "signal": "PI * pow(datum.radius, 2)" },
+          "fill": { "scale": "zcolor", "field": "pct" },
+          "tooltip": {
+            "signal": "{'Country': datum.country, 'Change percentage against previous year': datum.pctLabel, 'Year': '' + yr}"
+            }
+        }
+      }
+    },
+    {
+    "type": "text",
+    "from": {"data": "nodes"},
+    "encode": {
+        "update": {
+        "x": {"field": "x"},
+        "y": {"field": "y"},
+        "align": {"value": "center"},
+        "baseline": {"value": "middle"},
+        "text": {
+            "signal": "join(slice(split(datum.country, ' '), 0, 2), '\\n')"   
+        },
+        "font": {"value": "Playfair Display"},
+        "fontSize": {"signal": "clamp(datum.radius * 0.2, 10, 20)"},
+        "fontWeight": {"value": "700"},
+        "fill": {"value": "#2b2b2b"}
+        }
+    }
+    }
+
+  ]
+}

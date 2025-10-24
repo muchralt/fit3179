@@ -1,0 +1,101 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "Top 10 CO2 emitters — tightly packed bubbles (no cycles).",
+  "width":  { "signal": "w" },
+  "height": 420,
+  "autosize": { "type": "fit", "contains": "padding" },
+  "padding": {"top": 0, "right": 0, "bottom": 0, "left": 25},
+
+  "signals": [
+    {"name":"yr","value":2023,
+     "bind":{"input":"range","min":2000,"max":2023,"step":1,"name":"year: "}},
+    {"name":"minR","value":20},
+    {"name":"maxR","value":100},
+    {"name":"gap","value":-2},
+    {"name":"collideStrength","value":0.0008},
+    { "name": "cw", "update": "containerSize()[0]" },              
+    { "name": "w",  "update": "cw" },                              
+    { "name": "h",  "update":  "min(420, ceil(w * 0.55))" }  
+  ],
+
+  "data": [
+    {
+      "name":"raw",
+      "url":"https://raw.githubusercontent.com/inspideas/BarChart/refs/heads/main/co2_emission.csv",
+      "format":{"type":"csv"},
+      "transform":[
+        {"type":"formula","as":"em","expr":"toNumber(datum.emissions)"},
+        {"type":"filter","expr":"isValid(datum.em) && toNumber(datum.year) == yr"},
+        {"type":"window","sort":{"field":"em","order":"descending"},"ops":["rank"],"as":["rk"]},
+        {"type":"filter","expr":"datum.rk <= 10"},
+
+    
+        {"type":"joinaggregate","fields":["em","em"],"ops":["min","max"],"as":["emin","emax"]},
+
+      
+        {"type":"formula","as":"radius",
+         "expr":"minR + clamp((sqrt(datum.em) - sqrt(datum.emin)) / max(1e-9, sqrt(datum.emax) - sqrt(datum.emin)), 0, 1) * (maxR - minR)"}
+      ]
+    },
+
+    {
+      "name":"nodes",
+      "source":"raw",
+      "transform":[
+        {
+          "type":"force",
+          "iterations":1000,
+          "forces":[
+            {"force":"center","x":{"signal":"width/2"},
+            "y":{"signal":"height/2"}},
+            {"force":"collide","iterations":5,"strength":{"signal":"collideStrength"},
+             "radius":{"expr":"datum.radius + gap"}}
+          ],
+          "static": true
+        }
+      ]
+    }
+  ],
+
+  "scales": [
+    {"name":"color","type":"ordinal","domain":[1,2,3],
+     "range":["#d84a1b","#f6a041","#ffd36e"]}
+  ],
+
+  "marks": [
+    {
+      "type":"symbol",
+      "from":{"data":"nodes"},
+      "encode":{
+        "enter":{"stroke":{"value":"#fff"},"strokeWidth":{"value":1}},
+        "update":{
+          "x":{"field":"x"},
+          "y":{"field":"y"},
+
+          "size":{"signal":"PI * pow(datum.radius, 2)"},
+          "fill":[
+            {"test":"datum.rk <= 3","scale":"color","field":"rk"},
+            {"value":"#c9c9c9"}
+          ],
+          "tooltip":{
+            "signal":"{'Country': datum.country, 'Rank': datum.rk, 'Emissions': format(datum.em, ',.0f') + ' Tons', 'Year': yr}"
+          }
+        }
+      }
+    },
+    {
+      "type":"text",
+      "from":{"data":"nodes"},
+      "encode":{
+        "update":{
+          "x":{"field":"x"},"y":{"field":"y"},
+          "align":{"value":"center"},"baseline":{"value":"middle"},
+          "text":{"signal":"datum.rk <= 3 ? datum.country : ''"},
+          "font": {"value": "Playfair Display"},  
+          "fontSize":{"signal":"clamp(datum.radius * 0.3, 10, 20)"},
+          "fontWeight":{"value":"700"},"fill":{"value":"#2b2b2b"}
+        }
+      }
+    }
+  ]
+}

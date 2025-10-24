@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",     
+  "height": 520,
+  "autosize": { "type": "fit", "contains": "padding" },
+  "config": { "view": { "stroke": "#cccccc" } },
+  "projection": { "type": "equalEarth" },
+  "background": "#ffffff",
+
+
+  "params": [
+    {
+      "name": "yr",
+      "value": 2023,                                 
+      "bind": { "input": "range", "min": 2000, "max": 2023, "step": 1, "name": "year: " }
+    }
+  ],
+
+  "data": {
+    "url": "data/renewables.csv",
+    "format": { "type": "csv" }
+  },
+
+  "transform": [
+    { "filter": "toNumber(datum.year) == yr" },
+    { "calculate":  "toNumber(datum['Renewables (% equivalent primary energy)'])", "as": "ren_raw" },
+    { "calculate": "datum.ren_raw > 1 ? datum.ren_raw/100 : datum.ren_raw", "as": "ren" },
+
+
+    {
+      "lookup": "iso",                             
+      "from": {
+        "data": {
+          "url": "data/world-countries.json",
+          "format": { "type": "json", "property": "features" }
+        },
+        "key": "properties.ADM0_A3",   
+        "fields": ["geometry", "properties"]
+      },
+      "as": ["geo_geometry", "geo_props"]   
+    },
+
+    { "calculate": "{'type':'Feature','geometry':datum.geo_geometry,'properties':datum.geo_props}", "as": "geo" }
+  ],
+
+  "mark": { "type": "geoshape", "stroke": "#ffffff", "strokeWidth": 0.3 },
+
+  "encoding": {
+    "shape": { "field": "geo", "type": "geojson" },
+    "color": { "field": "Renewables (% equivalent primary energy)", "type": "quantitative",    
+      "legend": {
+    "title": "Renewables (% of\nPrimary Energy)",  
+    "titleLimit": 1000,                         
+    "labelLimit": 1000
+  }, "scale": {
+      "range": ["#f0fcca","#247802"]  
+    
+    } }
+    ,
+  "tooltip": [
+    { "field": "country", "title": "Country" },
+    { "field": "year", "title": "Year" },
+    { "field": "ren",     "title": "Renewable", "format": ".1%" }
+  ]
+}
+  }

@@ -1,0 +1,147 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "autosize": { "type": "fit", "contains": "padding", "resize": true },
+    "bounds": "flush",
+    "padding": { "top": 0, "right": 20, "bottom": 0, "left": 0 },
+  "background":"#FAFAFA",
+
+
+  "data": {
+    "url": "data/aus%20global%20ranking.csv",
+    "format": { "type": "csv", "parse": { "Ranking": "number", "emissions": "number", "Value": "number" } }
+  },
+
+  "facet": {
+    "column": {
+      "field":"indicator_title",
+      "type": "nominal",
+      "title": null,
+      "sort": ["Emissions","CO2 per Capita","Difference","Renewable"],
+      "header": { "labelOrient": "bottom", "labelAlign": "center" }
+    },
+    "columns": 4  
+  },
+
+  
+  "resolve": { "scale": { "y": "shared" } },
+
+  "spec": {
+    "width": 180, 
+    "height": 450,
+
+    "transform": [
+      { "filter": "datum.Ranking >= 1 && datum.Ranking <= 130" },
+      {
+        "calculate": "toNumber(isValid(datum.Value) ? datum.Value : (isValid(datum.emissions) ? datum.emissions : null))",
+        "as": "val"
+      },
+      { "calculate": "0.5", "as": "xc" },
+      {
+        "calculate": "datum.indicator == 'Difference' ? format((abs(datum.val) < 1 ? datum.val*100 : datum.val), '+.2f') + '%' : format(datum.val, ',.0f')",
+        "as": "val_formatted"
+      },
+      {
+        "calculate": "toString(datum.Ranking) + (datum.Ranking%10==1 && datum.Ranking%100!=11 ? 'st' : datum.Ranking%10==2 && datum.Ranking%100!=12 ? 'nd' : datum.Ranking%10==3 && datum.Ranking%100!=13 ? 'rd' : 'th')",
+        "as": "rank_ordinal"
+      },
+      {
+  "calculate": "datum.indicator == 'Emissions' ? 'Emissions (Ton)' : datum.indicator",
+  "as": "indicator_title"
+}
+    ],
+    
+
+    "layer": [
+      {
+    "mark": {
+      "type": "circle",
+      "opacity": 0.6,
+      "size": 28,
+      "clip": true
+    },
+    "encoding": {
+      "x": {
+        "field": "xc",
+        "type": "quantitative",
+        "scale": { "domain": [1, 0], "nice": false },
+        "axis": null
+      },
+      "y": {
+        "field": "Ranking",
+        "type": "quantitative",
+        "scale": {
+          "domain": [130, 1],  
+          "reverse": true,   
+          "nice": false,
+          "clamp": true
+        },
+        "axis": {
+          "title": "Rank (1 = Top)",
+          "tickCount": 13,
+          "grid": false
+        }
+      },
+      "color": {
+        "field": "indicator",
+        "type": "nominal",
+        "scale": {
+          "domain": ["Emissions","CO2 per Capita","Difference","Renewable", "Australia"],
+          "range":  ["#FA2105","#FAA14D","#CC00CC","#247802", "#000000"]   
+        },
+        "legend": {"title": "Category"}
+      },
+      "size": {
+        "condition": {"test": "datum.Ranking == 1", "value": 120},
+        "value": 28
+      },
+      "stroke": {
+        "condition": {"test": "datum.Ranking == 1", "value": "black"},
+        "value": null
+      },
+      "strokeWidth": {
+        "condition": {"test": "datum.Ranking == 1", "value": 1.5},
+        "value": 0
+      },
+      "tooltip": [
+        { "field": "country", "title": "Country" },
+        { "field": "indicator", "title": "Indicator" },
+        { "field": "rank_ordinal", "title": "Rank" },
+        { "field": "val_formatted", "title": "Value" }
+      ]
+    }
+  },
+      {
+        "transform": [ { "filter": "lower(datum.country) == 'australia'" } ],
+        "mark": { "type": "circle", "filled": true, "size": 140, "color": "#000000", "clip": true },
+        "encoding": {
+          "x": { "field": "xc", "type": "quantitative", "scale": { "domain": [0,1], "nice": false }, "axis": null },
+          "y": { "field": "Ranking", "type": "quantitative", "scale": { "domain": [1,130], "nice": false, "clamp": true } },
+          "tooltip": [
+            { "field": "country", "title": "Country" },
+            { "field": "indicator", "title": "Indicator" },
+            { "field": "rank_ordinal", "title": "Rank" },
+            { "field": "val_formatted", "title": "Value" }
+          ]
+        }
+      },
+      {
+        "transform": [ { "filter": "lower(datum.country) == 'australia'" } ],
+        "mark": { "type": "text", "align": "left", "dx": 8, "dy": 1, "fontSize": 11, "fontWeight": "bold", "color": "#000000" },
+        "encoding": {
+          "x": { "field": "xc", "type": "quantitative", "scale": { "domain": [0,1], "nice": false }, "axis": null },
+          "y": { "field": "Ranking", "type": "quantitative", "scale": { "domain": [1,130], "nice": false, "clamp": true } },
+          "text": { "field": "rank_ordinal" }
+        }
+      }
+    ]
+  },
+
+  "config": {
+    "view": { "stroke": null },
+    "style": { "cell": { "stroke": null } },  
+    "axis": { "grid": false, "tickSize": 4, "labelFontSize": 11, "titleFontSize": 12},
+    "axisX": { "domain": true, "ticks": false, "labels": false, "grid": false },
+    "axisY": { "grid": false , "domain": false},
+    "font":"Playfair Display"
+  }
+}

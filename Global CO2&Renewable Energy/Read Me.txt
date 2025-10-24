@@ -1,0 +1,13 @@
+How to use / view this visualization:
+
+Download the entire folder and unzip it.
+
+Open a local web server (e.g. via python -m http.server 5500)
+
+Open http://localhost:5500/index.html in your browser.
+
+All charts load data from the /data folder — so everything should run offline, without external links.
+
+If you prefer, you can replace the data files inside /data/ with your own updated datasets.
+Each Vega-Lite chart file (/charts/*.json) references the data via relative paths (e.g., "data/co2_emission.csv").
+No need to edit the HTML file — only swap your data file with the same name.

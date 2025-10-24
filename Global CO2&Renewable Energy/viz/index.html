@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Powering Change: Global CO₂ & Renewables</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#f2f2f2;
+      --ink:#222;
+      --muted:#666;
+      --line:#ddd;
+      --card:#ffffff;
+    }
+    *{box-sizing:border-box}
+    body{
+      font-family:"Playfair Display",serif;
+      background-color:var(--bg);
+      color:var(--ink);
+      margin:0;
+      line-height:1.6;
+    }
+    .wrap{max-width:1100px;margin:0 auto;padding:40px 20px}
+    h1{font-weight:700;margin:0 0 10px}
+    h2{font-weight:700;margin:32px 0 10px}
+    h3{font-weight:700;margin:18px 0 10px;font-size:1.15rem}
+    p.note{color:#555;margin:6px 0 22px}
+    .grid{display:grid;gap:20px}
+    .grid.two{grid-template-columns:1fr; }
+    .grid.three{grid-template-columns:1fr 1fr 1fr;}
+    @media(min-width:900px){
+      .grid.two{grid-template-columns:1fr 1fr;}
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:12px;
+      padding:18px;
+      box-shadow:0 1px 2px rgba(0,0,0,.04);
+    }
+    .holder{
+      display:flex;align-items:center;justify-content:center;
+      height:420px;border:1px dashed #c9c9c9;background:#fafafa;color:var(--muted);
+      border-radius:10px;
+    }
+    .eyebrow{font-size:.85rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+    .small{font-size:.92rem;color:var(--muted)}
+    .kpi-list{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    .kpi{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px}
+    .kpi .label{font-size:.85rem;color:var(--muted)}
+    .kpi .value{font-size:1.35rem;font-weight:700}
+    .byline{margin-top:6px;color:var(--muted);font-size:.9rem}
+    .hr{height:1px;background:var(--line);margin:18px 0}
+    .map-note{margin-top:8px;color:var(--muted);font-size:.92rem}
+    .card{ overflow: hidden; }
+    .vis, .vega-embed{ width:100%; }
+    .wrap{ overflow-x:hidden; }  
+    .dotted-frame {
+        border: 2px dashed #c9c9c9;
+        background: #fafafa;
+        border-radius: 10px;
+        padding: 20px;
+        height: 520px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+    .page-title, .page-sub { text-align:center; margin-inline:auto; }
+    .page-title { max-width: 60ch; }
+    .page-sub   { max-width: 70ch; color:#6b7280; }
+    .dashboard { display:grid; grid-template-areas:
+      "map  map"
+      "note note"
+      "renew renew"
+      "comment comment";
+      }
+  </style>
+
+  <!-- Vega / Vega-Lite / vega-embed (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- ── Hero / Intro ────────────────────────────────────────────── -->
+    <h1 style="text-align: center;">Powering Change: Global CO₂ Emissions & Energy Progress</h1>
+    <p class="note", style="text-indent: 40px;">The global energy landscape is undergoing one of the most profound transformations in modern history. As nations race to decarbonize, the 
+      balance between emissions, innovation, and renewable growth reveals both progress and disparity. This visual feature explores how countries 
+      contribute to - and combat - climate change through data on CO₂ emissions, renewable energy adoption, and annual shifts in performance.</p>
+    <p class="note", style="text-indent: 40px;">From the world’s top emitters driving global totals to nations leading in renewable integration, each visualization offers a snapshot of momentum, 
+      challenge, and opportunity. Australia’s own position highlights the tension between economic growth, resource dependency, and its evolving renewable 
+      capacity - a reflection of the broader global struggle to power change responsibly. Together, these insights illustrate a complex but 
+      hopeful narrative: that meaningful climate action is no longer a future ambition - it’s a measurable, visible, and accelerating transformation.</p>
+    <div class="map-note small"><strong>Disclaimer:</strong> The source of the data is updated every year in November.</div>
+
+    <!-- ── Section A: CO₂ Emissions Map (Map1) ─────────────────────── -->
+    <section class="card">
+      <div class="eyebrow">A. Global CO₂ emissions</div>
+      <h2>CO₂ Emissions by Country</h2>
+      <div id="map1"></div>
+      <div class="map-note small">Source: https://ourworldindata.org/grapher/annual-co2-emissions-per-country?country=~OWID_WRL.</div>
+    </section>
+
+    <!-- ── Section B: “2000 → 2023 Top10 / Percentage Difference” Bubble charts ─ -->
+    <section class="grid two">
+      <div class="card">
+        <div class="eyebrow">B1. Top 10 emitters</div>
+        <h3>Top 10 CO₂ Emission Countries (2000 → 2023)</h3>
+        <div id="bubble1" class="holder">Bubble chart placeholder (B1)</div>
+        <p class="byline">Source: https://ourworldindata.org/grapher/annual-co2-emissions-per-country?country=~OWID_WRL.</p>
+      </div>
+      <div class="card">
+        <div class="eyebrow">B2. % change</div>
+        <h3>% Difference in CO₂ Emissions (2000 → 2023)</h3>
+        <div id="bubble2" class="holder">Bubble chart placeholder (B2)</div>
+        <p class="byline">Source: https://ourworldindata.org/grapher/annual-co2-emissions-per-country?country=~OWID_WRL.</p>
+      </div>
+    </section>
+
+
+    <!-- ── Section C: Top 10 country comments────── -->
+    <section class="card">
+      <div class="eyebrow">C. Top 10 commentary</div>
+      <h2>Top 10 Countries - Notes & Observations</h2>
+      <div class="hr"></div>
+      <div class="grid two">
+        <div>
+          <h3>CO₂ Emissions</h3>
+          <ul>
+            <p> Global CO₂ emissions are dominated by a few key players.
+              <li><strong>China</strong> and <strong>the U.S.</strong> dominate, driving over one-third of emissions.</li>
+              <li><strong>India</strong> has surged to #3, powered by industrial growth and coal.</li>
+              <li><strong>Russia</strong> and <strong>Japan</strong> remain high despite slower economic growth.</li>
+              <li><strong>Iran</strong>, <strong>Saudi Arabia</strong>, and <strong>Indonesia</strong> reflect exporter- and population-driven rises.</li>
+              <li><strong>Germany</strong> and <strong>South Korea</strong> gain efficiency, but heavy industry anchors emissions.</li>
+              <li>The top ten countries have changed little, reflecting persistent global dependence on fossil fuels.</li>
+              <li><strong>Australia</strong> remains outside the top ten yet ranks high per capita, underscoring the challenge of reducing emissions in resource-rich economies.</li>
+          </ul>
+        </div>
+        <div>
+          <h3><strong>Percentage Change in CO₂ Emissions</strong></h3>
+            <ul>
+                <p> Every year countries are increasing and decreasing their emission.</p>
+                <li><strong>2023:</strong> <strong>Bulgaria</strong> shows the largest reduction, signalling post-industrial decline and cleaner transitions. <strong>Panama</strong> records sharp increases from trade and energy demand.</li>
+                <li><strong>2022:</strong> <strong>Ukraine</strong> sees major declines from war-related disruption; <strong>Indonesia</strong> rises sharply with coal output and recovery growth.</li>
+                <li><strong>2021:</strong> <strong>Libya</strong> and <strong>Lesotho</strong> surge after post-conflict and infrastructure rebounds across Africa.</li>
+                <li><strong>2020:</strong> Pandemic-year anomalies — <strong>Libya</strong> and <strong>Panama</strong> rebound as mobility resumes; smaller island nations stay stable.</li>
+                <li><strong>2019:</strong> <strong>Liberia</strong> and <strong>Curaçao</strong> show extreme swings, reflecting energy volatility and small-economy sensitivity.</li>
+              </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Section D: Renewables Map (Map2) ─────────────────────────── -->
+    <section class="card">
+      <div class="eyebrow">C. Renewable share</div>
+      <h2>Renewable Energy (Percentage of Primary Energy)</h2>
+      <p class="chart-note">
+        * Renewables include hydropower, solar, wind, geothermal, tidal, and modern bioenergy (excludes traditional biomass).
+      </p>
+      <style>.chart-note{margin-top:.5rem;font-size:.9rem;color:#6b7280}</style>
+            <div id="map2"></div>
+            <div class="map-note small">Source: https://ourworldindata.org/grapher/renewable-share-energy?time=latest.</div>
+      </section>
+
+    <!-- ── Section E: Australia focus ───────────────────────────────── -->
+    <section class="card">
+      <div class="eyebrow">E. Country spotlight</div>
+      <h2>Australia’s Global Ranking across CO₂ & Renewables</h2>
+      <p style="text-indent: 40px;">
+        Australia stands at a pivotal point in the global emissions landscape. Ranked 
+        <strong>16th</strong> in total <strong>CO₂ emissions</strong> and <strong>12th</strong> in 
+        <strong>CO₂ per capita</strong>, it remains among the world’s highest emitters relative to population size - 
+        reflecting its heavy industrial base and reliance on fossil fuels.
+      </p>
+      <p>
+        Its <strong>126th place</strong> in year-to-year change shows only modest improvement, 
+        suggesting that major emission reductions are yet to materialise. However, 
+        Australia’s <strong>35th ranking</strong> in <strong>renewable energy</strong> share marks 
+        steady progress, driven by rapid solar and wind adoption across states.
+      </p>
+      <p>
+        Overall, Australia’s performance tells a story of transition - 
+        a nation accelerating its renewable capacity while confronting the challenge 
+        of decarbonising a resource-driven economy.
+      </p>
+      <div class="kpi-list">
+        <div class="kpi">
+          <div class="label" style="color: #FA2105;">CO₂ Emissions</div>
+          <div class="value" style="color: #FA2105;">[16th]</div>
+          <div class="small" style="color: #FA2105;">Rank (latest year)</div>
+        </div>
+        <div class="kpi">
+          <div class="label" style="color: #FAA14D;">CO₂ per Capita</div>
+          <div class="value" style="color: #FAA14D;">[12th]</div>
+          <div class="small" style="color: #FAA14D;">Rank (latest year)</div>
+        </div>
+        <div class="kpi">
+          <div class="label" style="color: #CC00CC;">Emissions change since last year</div>
+          <div class="value" style="color: #CC00CC;">[126th]</div>
+          <div class="small" style="color: #CC00CC;">Percentage change of emissions vs 2022</div>
+        </div>
+        <div class="kpi">
+          <div class="label" style="color: #247802;">Renewables</div>
+          <div class="value" style="color: #247802;">[35th]</div>
+          <div class="small" style="color: #247802;">Rank (latest year)</div>
+        </div>
+      </div>
+      <div class="hr"></div>
+        <div class="holder dotted-frame">
+        <div id="rankComparisonChart"></div>
+    </div>
+    </section>
+
+  </div>
+
+  <script>
+    // Map 1: CO₂ emissions
+    vegaEmbed('#map1', 'charts/map_emissions.json', { actions:false })
+      .catch(console.error);
+
+    // Map 2: Renewables
+    vegaEmbed('#map2', 'charts/map_renewable.json', { actions:false })
+      .catch(console.error);
+
+    // Bubble placeholders:
+    vegaEmbed('#bubble1', 'charts/bubble_top10.json', { actions:false });
+    vegaEmbed('#bubble2', 'charts/bubble_diff_2000_2024.json', { actions:false });
+    vegaEmbed('#rankComparisonChart', 'charts/rank_comparison.json', { actions: false })
+  .catch(console.error);
+  </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",   
+  "height": 520,
+  "autosize": { "type": "fit", "contains": "padding" },
+  "config": { "view": { "stroke": "#cccccc" } },
+  "projection": { "type": "equalEarth" },
+  "background": "#ffffff",
+
+
+  "params": [
+    {
+      "name": "yr",
+      "value": 2023,                            
+      "bind": { "input": "range", "min": 2000, "max": 2023, "step": 1, "name": "year: " }
+    }
+  ],
+
+  "data": {
+    "url": "data/co2_emission.csv",
+    "format": { "type": "csv" }
+  },
+
+  "transform": [
+    { "filter": "toNumber(datum.year) == yr" },
+    { "calculate": "toNumber(datum.emissions)", "as": "em" },
+
+    {
+      "lookup": "iso",                           
+      "from": {
+        "data": {
+          "url": "data/world-countries.json",
+          "format": { "type": "json", "property": "features" }
+        },
+        "key": "properties.ADM0_A3",   
+        "fields": ["geometry", "properties"]
+      },
+      "as": ["geo_geometry", "geo_props"]   
+    },
+
+    { "calculate": "{'type':'Feature','geometry':datum.geo_geometry,'properties':datum.geo_props}", "as": "geo" }
+  ],
+
+  "mark": { "type": "geoshape", "stroke": "#ffffff", "strokeWidth": 0.3 },
+
+  "encoding": {
+    "shape": { "field": "geo", "type": "geojson" },
+    "color": { "field": "emissions", "type": "quantitative", "scale": { 
+    "domain": [0, 12000000000],     
+    "clamp": true,  
+      "range": ["#F8FA51","#F9BA0B","#FAA14D","#F96515","#FA2105"]   , "constant": 1} }
+    ,
+  "tooltip": [
+    { "field": "country", "title": "Country" },
+    { "field": "year", "title": "Year" },
+    { "field": "em", "title": "Emissions (tons)", "format": ",.0f" }
+  ]
+}
+  }

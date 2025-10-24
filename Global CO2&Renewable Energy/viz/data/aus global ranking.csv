@@ -1,0 +1,724 @@
+﻿country,iso,year,emissions,indicator,Ranking
+China,CHN,2023,11902503000,Emissions,1
+United States,USA,2023,4911391000,Emissions,2
+India,IND,2023,3062324500,Emissions,3
+Russia,RUS,2023,1815924700,Emissions,4
+Japan,JPN,2023,988784700,Emissions,5
+Iran,IRN,2023,817879900,Emissions,6
+Saudi Arabia,SAU,2023,736205300,Emissions,7
+Indonesia,IDN,2023,733223940,Emissions,8
+Germany,DEU,2023,596151360,Emissions,9
+South Korea,KOR,2023,577416640,Emissions,10
+Canada,CAN,2023,549299000,Emissions,11
+Brazil,BRA,2023,486470080,Emissions,12
+Mexico,MEX,2023,482623460,Emissions,13
+Turkey,TUR,2023,432077340,Emissions,14
+South Africa,ZAF,2023,401893100,Emissions,15
+Australia,AUS,2023,382972000,Emissions,16
+Vietnam,VNM,2023,334726080,Emissions,17
+Italy,ITA,2023,313460640,Emissions,18
+United Kingdom,GBR,2023,305146340,Emissions,19
+Poland,POL,2023,289281540,Emissions,20
+Malaysia,MYS,2023,288823680,Emissions,21
+France,FRA,2023,272475840,Emissions,22
+Egypt,EGY,2023,269006200,Emissions,23
+Thailand,THA,2023,264388640,Emissions,24
+Taiwan,TWN,2023,261152590,Emissions,25
+Kazakhstan,KAZ,2023,255161470,Emissions,26
+United Arab Emirates,ARE,2023,229383650,Emissions,27
+Spain,ESP,2023,221615650,Emissions,28
+Pakistan,PAK,2023,200666690,Emissions,29
+Argentina,ARG,2023,195805970,Emissions,30
+Algeria,DZA,2023,178132770,Emissions,31
+Iraq,IRQ,2023,176457950,Emissions,32
+Philippines,PHL,2023,154578660,Emissions,33
+Ukraine,UKR,2023,136460590,Emissions,34
+Nigeria,NGA,2023,128539720,Emissions,35
+Uzbekistan,UZB,2023,124768440,Emissions,36
+Netherlands,NLD,2023,118668370,Emissions,37
+Qatar,QAT,2023,115711816,Emissions,38
+Bangladesh,BGD,2023,113426860,Emissions,39
+Colombia,COL,2023,105238664,Emissions,40
+Venezuela,VEN,2023,99568900,Emissions,41
+Kuwait,KWT,2023,99233390,Emissions,42
+Czechia,CZE,2023,85624184,Emissions,43
+Belgium,BEL,2023,83368480,Emissions,44
+Oman,OMN,2023,78511300,Emissions,45
+Chile,CHL,2023,77287704,Emissions,46
+Morocco,MAR,2023,68667610,Emissions,47
+Romania,ROU,2023,68239480,Emissions,48
+Turkmenistan,TKM,2023,63362624,Emissions,49
+Libya,LBY,2023,60975930,Emissions,50
+North Korea,PRK,2023,60764244,Emissions,51
+Israel,ISR,2023,59489496,Emissions,52
+Austria,AUT,2023,58578050,Emissions,53
+Belarus,BLR,2023,56490772,Emissions,54
+Peru,PER,2023,55863636,Emissions,55
+Greece,GRC,2023,55196200,Emissions,56
+Singapore,SGP,2023,49252784,Emissions,57
+Mongolia,MNG,2023,46869964,Emissions,58
+Azerbaijan,AZE,2023,43936972,Emissions,59
+Ecuador,ECU,2023,43172870,Emissions,60
+Serbia,SRB,2023,42357788,Emissions,61
+Hungary,HUN,2023,40190156,Emissions,62
+Norway,NOR,2023,38901000,Emissions,63
+Portugal,PRT,2023,37228136,Emissions,64
+Sweden,SWE,2023,36556280,Emissions,65
+Bahrain,BHR,2023,36526764,Emissions,66
+Bulgaria,BGR,2023,36093596,Emissions,67
+Ireland,IRL,2023,34432788,Emissions,68
+Trinidad and Tobago,TTO,2023,34317936,Emissions,69
+Hong Kong,HKG,2023,33871056,Emissions,70
+Tunisia,TUN,2023,32792874,Emissions,71
+Switzerland,CHE,2023,32737300,Emissions,72
+Dominican Republic,DOM,2023,32019646,Emissions,73
+Finland,FIN,2023,31622000,Emissions,74
+Slovakia,SVK,2023,30739160,Emissions,75
+Myanmar,MMR,2023,30233224,Emissions,76
+New Zealand,NZL,2023,30119236,Emissions,77
+Denmark,DNK,2023,27264778,Emissions,78
+Syria,SYR,2023,25503272,Emissions,79
+Laos,LAO,2023,24796292,Emissions,80
+Bolivia,BOL,2023,23359406,Emissions,81
+Cuba,CUB,2023,23097436,Emissions,82
+Kenya,KEN,2023,21531040,Emissions,83
+Jordan,JOR,2023,21188884,Emissions,84
+Angola,AGO,2023,20780540,Emissions,85
+Guatemala,GTM,2023,20382320,Emissions,86
+Sri Lanka,LKA,2023,20317522,Emissions,87
+Bosnia and Herzegovina,BIH,2023,20179128,Emissions,88
+Cambodia,KHM,2023,20178442,Emissions,89
+Sudan,SDN,2023,20001454,Emissions,90
+Ghana,GHA,2023,19647176,Emissions,91
+Lebanon,LBN,2023,19475458,Emissions,92
+Tanzania,TZA,2023,18066046,Emissions,93
+Croatia,HRV,2023,17524080,Emissions,94
+Nepal,NPL,2023,16677210,Emissions,95
+Ethiopia,ETH,2023,15227142,Emissions,96
+Panama,PAN,2023,14018338,Emissions,97
+Cote d'Ivoire,CIV,2023,13195601,Emissions,98
+Lithuania,LTU,2023,12461681,Emissions,99
+Senegal,SEN,2023,11900644,Emissions,100
+Brunei,BRN,2023,11769600,Emissions,101
+Georgia,GEO,2023,11768941,Emissions,102
+Slovenia,SVN,2023,11328390,Emissions,103
+Zimbabwe,ZWE,2023,11164030,Emissions,104
+Honduras,HND,2023,11042214,Emissions,105
+Afghanistan,AFG,2023,11020218,Emissions,106
+Kyrgyzstan,KGZ,2023,10152343,Emissions,107
+Yemen,YEM,2023,10034892,Emissions,108
+Estonia,EST,2023,10018740,Emissions,109
+Cameroon,CMR,2023,9941406,Emissions,110
+Tajikistan,TJK,2023,9054525,Emissions,111
+Kosovo,OWID_KOS,2023,8376729,Emissions,112
+Papua New Guinea,PNG,2023,8322015,Emissions,113
+Costa Rica,CRI,2023,8279034,Emissions,114
+El Salvador,SLV,2023,8230260,Emissions,115
+Paraguay,PRY,2023,8139286,Emissions,116
+Mozambique,MOZ,2023,8023384,Emissions,117
+Uruguay,URY,2023,7865945,Emissions,118
+Zambia,ZMB,2023,7748922,Emissions,119
+Congo,COG,2023,7674340,Emissions,120
+Jamaica,JAM,2023,7648698,Emissions,121
+Armenia,ARM,2023,7608323,Emissions,122
+North Macedonia,MKD,2023,7448824,Emissions,123
+Cyprus,CYP,2023,7174221,Emissions,124
+Luxembourg,LUX,2023,6993124,Emissions,125
+Mali,MLI,2023,6761669,Emissions,126
+Botswana,BWA,2023,6713559,Emissions,127
+Latvia,LVA,2023,6512889,Emissions,128
+Burkina Faso,BFA,2023,6186583,Emissions,129
+Equatorial Guinea,GNQ,2023,6141370,Emissions,130
+Moldova,MDA,2023,5962224,Emissions,131
+Uganda,UGA,2023,5613657,Emissions,132
+Benin,BEN,2023,5592317,Emissions,133
+Nicaragua,NIC,2023,5588379,Emissions,134
+Gabon,GAB,2023,5410930,Emissions,135
+Albania,ALB,2023,5144279,Emissions,136
+New Caledonia,NCL,2023,5067623,Emissions,137
+Democratic Republic of Congo,COD,2023,4615953,Emissions,138
+Madagascar,MDG,2023,4476379,Emissions,139
+Mauritania,MRT,2023,4412598,Emissions,140
+Namibia,NAM,2023,4174206,Emissions,141
+Mauritius,MUS,2023,4138937,Emissions,142
+Guinea,GIN,2023,4042787,Emissions,143
+Lesotho,LSO,2023,3888782,Emissions,144
+Iceland,ISL,2023,3762450,Emissions,145
+Guyana,GUY,2023,3545070,Emissions,146
+Haiti,HTI,2023,3522026,Emissions,147
+Palestine,PSE,2023,3496897,Emissions,148
+Chad,TCD,2023,3079389,Emissions,149
+Suriname,SUR,2023,2647446,Emissions,150
+Togo,TGO,2023,2620035,Emissions,151
+Niger,NER,2023,2597634,Emissions,152
+Bahamas,BHS,2023,2505352,Emissions,153
+Montenegro,MNE,2023,2328379,Emissions,154
+Maldives,MDV,2023,2062305,Emissions,155
+Curacao,CUW,2023,2023421,Emissions,156
+Malta,MLT,2023,1822230,Emissions,157
+Malawi,MWI,2023,1752411,Emissions,158
+Bhutan,BTN,2023,1713060,Emissions,159
+South Sudan,SSD,2023,1580456,Emissions,160
+Rwanda,RWA,2023,1540220,Emissions,161
+Sierra Leone,SLE,2023,1231506,Emissions,162
+Barbados,BRB,2023,1191738,Emissions,163
+Fiji,FJI,2023,1146151,Emissions,164
+Eswatini,SWZ,2023,1104210,Emissions,165
+Macao,MAC,2023,1057495,Emissions,166
+French Polynesia,PYF,2023,916154,Emissions,167
+Aruba,ABW,2023,867180,Emissions,168
+Faroe Islands,FRO,2023,797616,Emissions,169
+Liberia,LBR,2023,771001,Emissions,170
+Gambia,GMB,2023,710899,Emissions,171
+Burundi,BDI,2023,709700,Emissions,172
+Sint Maarten (Dutch part),SXM,2023,693003,Emissions,173
+Belize,BLZ,2023,667898,Emissions,174
+Antigua and Barbuda,ATG,2023,644826,Emissions,175
+East Timor,TLS,2023,632121,Emissions,176
+Eritrea,ERI,2023,620764,Emissions,177
+Greenland,GRL,2023,596405,Emissions,178
+Somalia,SOM,2023,557614,Emissions,179
+Seychelles,SYC,2023,551015,Emissions,180
+Cape Verde,CPV,2023,534969,Emissions,181
+Bermuda,BMU,2023,522532,Emissions,182
+Saint Lucia,LCA,2023,511414,Emissions,183
+Djibouti,DJI,2023,492543,Emissions,184
+Comoros,COM,2023,448731,Emissions,185
+Andorra,AND,2023,423874,Emissions,186
+Turks and Caicos Islands,TCA,2023,370590,Emissions,187
+Grenada,GRD,2023,339363,Emissions,188
+Solomon Islands,SLB,2023,302829,Emissions,189
+Guinea-Bissau,GNB,2023,298003,Emissions,190
+Central African Republic,CAF,2023,281213,Emissions,191
+Samoa,WSM,2023,256830,Emissions,192
+Saint Vincent and the Grenadines,VCT,2023,237178,Emissions,193
+Saint Kitts and Nevis,KNA,2023,233472,Emissions,194
+Vanuatu,VUT,2023,226164,Emissions,195
+Palau,PLW,2023,222330,Emissions,196
+Tonga,TON,2023,199331,Emissions,197
+British Virgin Islands,VGB,2023,185295,Emissions,198
+Sao Tome and Principe,STP,2023,166171,Emissions,199
+Dominica,DMA,2023,163060,Emissions,200
+Liechtenstein,LIE,2023,157238,Emissions,201
+Marshall Islands,MHL,2023,153331,Emissions,202
+Micronesia (country),FSM,2023,149498,Emissions,203
+Anguilla,AIA,2023,144530,Emissions,204
+Bonaire Sint Eustatius and Saba,BES,2023,114883,Emissions,205
+Cook Islands,COK,2023,72832,Emissions,206
+Kiribati,KIR,2023,68999,Emissions,207
+Nauru,NRU,2023,57499,Emissions,208
+Saint Pierre and Miquelon,SPM,2023,55588,Emissions,209
+Wallis and Futuna,WLF,2023,30666,Emissions,210
+Montserrat,MSR,2023,22235,Emissions,211
+Tuvalu,TUV,2023,11500,Emissions,212
+Saint Helena,SHN,2023,11118,Emissions,213
+Niue,NIU,2023,7667,Emissions,214
+Antarctica,ATA,2023,0,Emissions,215
+Christmas Island,CXR,2023,0,Emissions,215
+Qatar,QAT,2023,38.84138,CO2 per Capita,1
+Brunei,BRN,2023,25.644121,CO2 per Capita,2
+Bahrain,BHR,2023,23.270287,CO2 per Capita,3
+Trinidad and Tobago,TTO,2023,22.8339,CO2 per Capita,4
+Saudi Arabia,SAU,2023,22.132002,CO2 per Capita,5
+United Arab Emirates,ARE,2023,21.554382,CO2 per Capita,6
+Kuwait,KWT,2023,20.507933,CO2 per Capita,7
+New Caledonia,NCL,2023,17.481855,CO2 per Capita,8
+Sint Maarten (Dutch part),SXM,2023,16.201122,CO2 per Capita,9
+Oman,OMN,2023,15.549048,CO2 per Capita,10
+Faroe Islands,FRO,2023,14.571523,CO2 per Capita,11
+Australia,AUS,2023,14.478477,CO2 per Capita,12
+United States,USA,2023,14.299026,CO2 per Capita,13
+Canada,CAN,2023,13.977395,CO2 per Capita,14
+Mongolia,MNG,2023,13.656996,CO2 per Capita,15
+Kazakhstan,KAZ,2023,12.550915,CO2 per Capita,16
+Palau,PLW,2023,12.524928,CO2 per Capita,17
+Russia,RUS,2023,12.485688,CO2 per Capita,18
+Taiwan,TWN,2023,11.200025,CO2 per Capita,19
+South Korea,KOR,2023,11.15808,CO2 per Capita,20
+Curacao,CUW,2023,10.911635,CO2 per Capita,21
+Greenland,GRL,2023,10.659416,CO2 per Capita,22
+Luxembourg,LUX,2023,10.514379,CO2 per Capita,23
+Anguilla,AIA,2023,10.012469,CO2 per Capita,24
+Saint Pierre and Miquelon,SPM,2023,9.740319,CO2 per Capita,25
+Iceland,ISL,2023,9.70807,CO2 per Capita,26
+Iran,IRN,2023,9.0265045,CO2 per Capita,27
+Turkmenistan,TKM,2023,8.603866,CO2 per Capita,28
+Singapore,SGP,2023,8.50786,CO2 per Capita,29
+China,CHN,2023,8.366814,CO2 per Capita,30
+Libya,LBY,2023,8.346396,CO2 per Capita,31
+Malaysia,MYS,2023,8.222435,CO2 per Capita,32
+Bermuda,BMU,2023,8.073608,CO2 per Capita,33
+Aruba,ABW,2023,8.033462,CO2 per Capita,34
+Turks and Caicos Islands,TCA,2023,8.017784,CO2 per Capita,35
+Japan,JPN,2023,7.950287,CO2 per Capita,36
+Czechia,CZE,2023,7.921035,CO2 per Capita,37
+Poland,POL,2023,7.462856,CO2 per Capita,38
+Estonia,EST,2023,7.3279524,CO2 per Capita,39
+Belgium,BEL,2023,7.117669,CO2 per Capita,40
+Germany,DEU,2023,7.051021,CO2 per Capita,41
+Norway,NOR,2023,7.048346,CO2 per Capita,42
+Antigua and Barbuda,ATG,2023,6.909023,CO2 per Capita,43
+Ireland,IRL,2023,6.6259856,CO2 per Capita,44
+Netherlands,NLD,2023,6.558972,CO2 per Capita,45
+Israel,ISR,2023,6.426912,CO2 per Capita,46
+Austria,AUT,2023,6.4156914,CO2 per Capita,47
+South Africa,ZAF,2023,6.357822,CO2 per Capita,48
+Bosnia and Herzegovina,BIH,2023,6.3355327,CO2 per Capita,49
+Bahamas,BHS,2023,6.2719727,CO2 per Capita,50
+Serbia,SRB,2023,6.25373,CO2 per Capita,51
+Belarus,BLR,2023,6.1970997,CO2 per Capita,52
+New Zealand,NZL,2023,5.822576,CO2 per Capita,53
+Finland,FIN,2023,5.6455913,CO2 per Capita,54
+Slovakia,SVK,2023,5.570649,CO2 per Capita,55
+Greece,GRC,2023,5.3887224,CO2 per Capita,56
+Slovenia,SVN,2023,5.3476315,CO2 per Capita,57
+Cyprus,CYP,2023,5.334069,CO2 per Capita,58
+Bulgaria,BGR,2023,5.311158,CO2 per Capita,59
+Italy,ITA,2023,5.2682943,CO2 per Capita,60
+Andorra,AND,2023,5.2414894,CO2 per Capita,61
+Cook Islands,COK,2023,5.1131706,CO2 per Capita,62
+Montserrat,MSR,2023,5.007883,CO2 per Capita,63
+Saint Kitts and Nevis,KNA,2023,4.990531,CO2 per Capita,64
+Turkey,TUR,2023,4.9510126,CO2 per Capita,65
+Kosovo,OWID_KOS,2023,4.927375,CO2 per Capita,66
+Nauru,NRU,2023,4.8318486,CO2 per Capita,67
+British Virgin Islands,VGB,2023,4.7500577,CO2 per Capita,68
+Spain,ESP,2023,4.625513,CO2 per Capita,69
+Denmark,DNK,2023,4.583753,CO2 per Capita,70
+Hong Kong,HKG,2023,4.5508866,CO2 per Capita,71
+Croatia,HRV,2023,4.4979405,CO2 per Capita,72
+United Kingdom,GBR,2023,4.4428244,CO2 per Capita,73
+Lithuania,LTU,2023,4.3662324,CO2 per Capita,74
+Seychelles,SYC,2023,4.3061166,CO2 per Capita,75
+Argentina,ARG,2023,4.299799,CO2 per Capita,76
+Guyana,GUY,2023,4.289998,CO2 per Capita,77
+Azerbaijan,AZE,2023,4.2581973,CO2 per Capita,78
+Barbados,BRB,2023,4.2208276,CO2 per Capita,79
+Suriname,SUR,2023,4.209699,CO2 per Capita,80
+Niue,NIU,2023,4.1645846,CO2 per Capita,81
+Hungary,HUN,2023,4.1491046,CO2 per Capita,82
+France,FRA,2023,4.101154,CO2 per Capita,83
+North Macedonia,MKD,2023,4.0663958,CO2 per Capita,84
+Liechtenstein,LIE,2023,3.968452,CO2 per Capita,85
+Marshall Islands,MHL,2023,3.9468455,CO2 per Capita,86
+Chile,CHL,2023,3.9314492,CO2 per Capita,87
+Maldives,MDV,2023,3.9206648,CO2 per Capita,88
+Iraq,IRQ,2023,3.9148452,CO2 per Capita,89
+Algeria,DZA,2023,3.858676,CO2 per Capita,90
+Bonaire Sint Eustatius and Saba,BES,2023,3.8396726,CO2 per Capita,91
+Mexico,MEX,2023,3.719935,CO2 per Capita,92
+Switzerland,CHE,2023,3.6905546,CO2 per Capita,93
+Thailand,THA,2023,3.6873035,CO2 per Capita,94
+Montenegro,MNE,2023,3.6751132,CO2 per Capita,95
+Ukraine,UKR,2023,3.6164947,CO2 per Capita,96
+Romania,ROU,2023,3.5692937,CO2 per Capita,97
+Portugal,PRT,2023,3.5690808,CO2 per Capita,98
+Venezuela,VEN,2023,3.5182285,CO2 per Capita,99
+Uzbekistan,UZB,2023,3.4995892,CO2 per Capita,100
+Sweden,SWE,2023,3.46456,CO2 per Capita,101
+Latvia,LVA,2023,3.4598875,CO2 per Capita,102
+Malta,MLT,2023,3.419049,CO2 per Capita,103
+Lebanon,LBN,2023,3.3732533,CO2 per Capita,104
+Vietnam,VNM,2023,3.3355136,CO2 per Capita,105
+Equatorial Guinea,GNQ,2023,3.324051,CO2 per Capita,106
+French Polynesia,PYF,2023,3.258885,CO2 per Capita,107
+Mauritius,MUS,2023,3.2498164,CO2 per Capita,108
+Laos,LAO,2023,3.2350018,CO2 per Capita,109
+Panama,PAN,2023,3.1440005,CO2 per Capita,110
+Georgia,GEO,2023,3.090994,CO2 per Capita,111
+Grenada,GRD,2023,2.89821,CO2 per Capita,112
+Saint Lucia,LCA,2023,2.8524244,CO2 per Capita,113
+Dominican Republic,DOM,2023,2.8257775,CO2 per Capita,114
+Botswana,BWA,2023,2.7068162,CO2 per Capita,115
+Jamaica,JAM,2023,2.6934075,CO2 per Capita,116
+Wallis and Futuna,WLF,2023,2.6914165,CO2 per Capita,117
+Tunisia,TUN,2023,2.687845,CO2 per Capita,118
+Indonesia,IDN,2023,2.607574,CO2 per Capita,119
+Armenia,ARM,2023,2.5848775,CO2 per Capita,120
+Dominica,DMA,2023,2.4508874,CO2 per Capita,121
+Ecuador,ECU,2023,2.4011502,CO2 per Capita,122
+Egypt,EGY,2023,2.3486655,CO2 per Capita,123
+Saint Vincent and the Grenadines,VCT,2023,2.3406262,CO2 per Capita,124
+Uruguay,URY,2023,2.3216505,CO2 per Capita,125
+Brazil,BRA,2023,2.3040087,CO2 per Capita,126
+North Korea,PRK,2023,2.3000906,CO2 per Capita,127
+Bhutan,BTN,2023,2.1783957,CO2 per Capita,128
+Gabon,GAB,2023,2.1776206,CO2 per Capita,129
+India,IND,2023,2.129469,CO2 per Capita,130
+Cuba,CUB,2023,2.095969,CO2 per Capita,131
+Saint Helena,SHN,2023,2.091422,CO2 per Capita,132
+Colombia,COL,2023,2.011398,CO2 per Capita,133
+Moldova,MDA,2023,1.9439465,CO2 per Capita,134
+Bolivia,BOL,2023,1.9077996,CO2 per Capita,135
+Tonga,TON,2023,1.9054133,CO2 per Capita,136
+Jordan,JOR,2023,1.8523015,CO2 per Capita,137
+Albania,ALB,2023,1.8296235,CO2 per Capita,138
+Morocco,MAR,2023,1.8208175,CO2 per Capita,139
+Lesotho,LSO,2023,1.6823804,CO2 per Capita,140
+Peru,PER,2023,1.6505427,CO2 per Capita,141
+Belize,BLZ,2023,1.6246133,CO2 per Capita,142
+Costa Rica,CRI,2023,1.6215829,CO2 per Capita,143
+Macao,MAC,2023,1.4812597,CO2 per Capita,144
+Kyrgyzstan,KGZ,2023,1.4352598,CO2 per Capita,145
+Namibia,NAM,2023,1.4087284,CO2 per Capita,146
+Philippines,PHL,2023,1.3454351,CO2 per Capita,147
+Micronesia (country),FSM,2023,1.3271488,CO2 per Capita,148
+El Salvador,SLV,2023,1.3043969,CO2 per Capita,149
+Congo,COG,2023,1.2412221,CO2 per Capita,150
+Fiji,FJI,2023,1.2402219,CO2 per Capita,151
+Paraguay,PRY,2023,1.1892326,CO2 per Capita,152
+Samoa,WSM,2023,1.1853346,CO2 per Capita,153
+Tuvalu,TUV,2023,1.1690556,CO2 per Capita,154
+Cambodia,KHM,2023,1.158091,CO2 per Capita,155
+Guatemala,GTM,2023,1.1245517,CO2 per Capita,156
+Syria,SYR,2023,1.0808934,CO2 per Capita,157
+Honduras,HND,2023,1.037329,CO2 per Capita,158
+Cape Verde,CPV,2023,1.0241876,CO2 per Capita,159
+Eswatini,SWZ,2023,0.8973618,CO2 per Capita,160
+Sri Lanka,LKA,2023,0.88446206,CO2 per Capita,161
+Mauritania,MRT,2023,0.8785762,CO2 per Capita,162
+Tajikistan,TJK,2023,0.87148154,CO2 per Capita,163
+Nicaragua,NIC,2023,0.8189758,CO2 per Capita,164
+Pakistan,PAK,2023,0.8107597,CO2 per Capita,165
+Papua New Guinea,PNG,2023,0.80099183,CO2 per Capita,166
+Sao Tome and Principe,STP,2023,0.7197226,CO2 per Capita,167
+Vanuatu,VUT,2023,0.7058317,CO2 per Capita,168
+Zimbabwe,ZWE,2023,0.6831985,CO2 per Capita,169
+Bangladesh,BGD,2023,0.6615085,CO2 per Capita,170
+Senegal,SEN,2023,0.6583098,CO2 per Capita,171
+Palestine,PSE,2023,0.646472,CO2 per Capita,172
+Ghana,GHA,2023,0.5814853,CO2 per Capita,173
+Angola,AGO,2023,0.5654583,CO2 per Capita,174
+Nigeria,NGA,2023,0.5640603,CO2 per Capita,175
+Nepal,NPL,2023,0.56162405,CO2 per Capita,176
+Myanmar,MMR,2023,0.5584907,CO2 per Capita,177
+Comoros,COM,2023,0.5276767,CO2 per Capita,178
+Kiribati,KIR,2023,0.52059,CO2 per Capita,179
+East Timor,TLS,2023,0.4566385,CO2 per Capita,180
+Djibouti,DJI,2023,0.42720202,CO2 per Capita,181
+Cote d'Ivoire,CIV,2023,0.42340204,CO2 per Capita,182
+Sudan,SDN,2023,0.39968696,CO2 per Capita,183
+Benin,BEN,2023,0.39630806,CO2 per Capita,184
+Kenya,KEN,2023,0.38907528,CO2 per Capita,185
+Solomon Islands,SLB,2023,0.37852964,CO2 per Capita,186
+Zambia,ZMB,2023,0.37391114,CO2 per Capita,187
+Cameroon,CMR,2023,0.35038644,CO2 per Capita,188
+Haiti,HTI,2023,0.3026471,CO2 per Capita,189
+Mali,MLI,2023,0.2844727,CO2 per Capita,190
+Togo,TGO,2023,0.2815926,CO2 per Capita,191
+Guinea,GIN,2023,0.2806425,CO2 per Capita,192
+Tanzania,TZA,2023,0.27119026,CO2 per Capita,193
+Burkina Faso,BFA,2023,0.26868075,CO2 per Capita,194
+Afghanistan,AFG,2023,0.2658372,CO2 per Capita,195
+Gambia,GMB,2023,0.26350614,CO2 per Capita,196
+Yemen,YEM,2023,0.2547522,CO2 per Capita,197
+Mozambique,MOZ,2023,0.23854156,CO2 per Capita,198
+Eritrea,ERI,2023,0.17887437,CO2 per Capita,199
+Chad,TCD,2023,0.15939629,CO2 per Capita,200
+Sierra Leone,SLE,2023,0.14555909,CO2 per Capita,201
+Madagascar,MDG,2023,0.14349237,CO2 per Capita,202
+Liberia,LBR,2023,0.14035974,CO2 per Capita,203
+Guinea-Bissau,GNB,2023,0.13839087,CO2 per Capita,204
+South Sudan,SSD,2023,0.13762999,CO2 per Capita,205
+Ethiopia,ETH,2023,0.11832265,CO2 per Capita,206
+Uganda,UGA,2023,0.11537297,CO2 per Capita,207
+Rwanda,RWA,2023,0.110374644,CO2 per Capita,208
+Niger,NER,2023,0.099298455,CO2 per Capita,209
+Malawi,MWI,2023,0.08303502,CO2 per Capita,210
+Central African Republic,CAF,2023,0.05457887,CO2 per Capita,211
+Burundi,BDI,2023,0.051842824,CO2 per Capita,212
+Democratic Republic of Congo,COD,2023,0.04363328,CO2 per Capita,213
+Somalia,SOM,2023,0.030373413,CO2 per Capita,214
+Iceland,ISL,2023,81.843285,Renewable,1
+Norway,NOR,2023,70.75797,Renewable,2
+Sweden,SWE,2023,52.458923,Renewable,3
+Brazil,BRA,2023,48.949894,Renewable,4
+New Zealand,NZL,2023,42.264587,Renewable,5
+Denmark,DNK,2023,40.938076,Renewable,6
+Austria,AUT,2023,40.022125,Renewable,7
+Finland,FIN,2023,35.888016,Renewable,8
+Switzerland,CHE,2023,35.635983,Renewable,9
+Portugal,PRT,2023,34.669537,Renewable,10
+Latvia,LVA,2023,31.776415,Renewable,11
+Chile,CHL,2023,30.346954,Renewable,12
+Croatia,HRV,2023,29.586359,Renewable,13
+Ecuador,ECU,2023,27.974184,Renewable,14
+Canada,CAN,2023,27.857828,Renewable,15
+Colombia,COL,2023,27.397959,Renewable,16
+Venezuela,VEN,2023,25.759012,Renewable,17
+Peru,PER,2023,25.562147,Renewable,18
+Spain,ESP,2023,24.822027,Renewable,19
+Germany,DEU,2023,23.602962,Renewable,20
+Slovenia,SVN,2023,23.025827,Renewable,21
+Ireland,IRL,2023,21.819515,Renewable,22
+Vietnam,VNM,2023,21.387896,Renewable,23
+Sri Lanka,LKA,2023,20.968931,Renewable,24
+Romania,ROU,2023,20.908308,Renewable,25
+Greece,GRC,2023,20.754215,Renewable,26
+United Kingdom,GBR,2023,19.976458,Renewable,27
+Italy,ITA,2023,18.85383,Renewable,28
+Lithuania,LTU,2023,18.719112,Renewable,29
+Turkey,TUR,2023,18.325584,Renewable,30
+North Macedonia,MKD,2023,16.83277,Renewable,31
+Netherlands,NLD,2023,16.630291,Renewable,32
+France,FRA,2023,15.866664,Renewable,33
+China,CHN,2023,15.505326,Renewable,34
+Australia,AUS,2023,14.323447,Renewable,35
+Estonia,EST,2023,14.305354,Renewable,36
+Bulgaria,BGR,2023,14.287648,Renewable,37
+Argentina,ARG,2023,14.100092,Renewable,38
+Philippines,PHL,2023,12.921859,Renewable,39
+Luxembourg,LUX,2023,12.572248,Renewable,40
+Pakistan,PAK,2023,12.265969,Renewable,41
+Belgium,BEL,2023,12.149441,Renewable,42
+Japan,JPN,2023,11.965058,Renewable,43
+Poland,POL,2023,11.751781,Renewable,44
+United States,USA,2023,11.212399,Renewable,45
+Hungary,HUN,2023,10.885689,Renewable,46
+Indonesia,IDN,2023,10.695158,Renewable,47
+Slovakia,SVK,2023,10.552875,Renewable,48
+Cyprus,CYP,2023,9.266293,Renewable,49
+India,IND,2023,8.860951,Renewable,50
+Ukraine,UKR,2023,8.776944,Renewable,51
+Czechia,CZE,2023,8.385919,Renewable,52
+Malaysia,MYS,2023,8.116639,Renewable,53
+Morocco,MAR,2023,7.97416,Renewable,54
+Mexico,MEX,2023,7.9276714,Renewable,55
+Israel,ISR,2023,7.829866,Renewable,56
+Thailand,THA,2023,7.6081514,Renewable,57
+Russia,RUS,2023,5.913319,Renewable,58
+Egypt,EGY,2023,5.803628,Renewable,59
+Taiwan,TWN,2023,5.0049877,Renewable,60
+South Korea,KOR,2023,4.6598625,Renewable,61
+Kazakhstan,KAZ,2023,4.1786494,Renewable,62
+South Africa,ZAF,2023,3.7571616,Renewable,63
+Uzbekistan,UZB,2023,3.1044497,Renewable,64
+United Arab Emirates,ARE,2023,2.514485,Renewable,65
+Azerbaijan,AZE,2023,2.2942455,Renewable,66
+Iran,IRN,2023,1.679545,Renewable,67
+Oman,OMN,2023,1.1416178,Renewable,68
+Hong Kong,HKG,2023,1.0476631,Renewable,69
+Belarus,BLR,2023,1.0273277,Renewable,70
+Qatar,QAT,2023,0.8158959,Renewable,71
+Bangladesh,BGD,2023,0.7899922,Renewable,72
+Iraq,IRQ,2023,0.59808654,Renewable,73
+Singapore,SGP,2023,0.49312237,Renewable,74
+Saudi Arabia,SAU,2023,0.35929954,Renewable,75
+Algeria,DZA,2023,0.22667149,Renewable,76
+Kuwait,KWT,2023,0.083869755,Renewable,77
+Trinidad and Tobago,TTO,2023,0.009318239,Renewable,78
+Turkmenistan,TKM,2023,0.005623913,Renewable,79
+Panama,PAN,2023,0.234496883,Difference,1
+Venezuela,VEN,2023,0.137740576,Difference,2
+Vietnam,VNM,2023,0.124623657,Difference,3
+Qatar,QAT,2023,0.090058933,Difference,4
+Azerbaijan,AZE,2023,0.087778215,Difference,5
+India,IND,2023,0.081647732,Difference,6
+North Korea,PRK,2023,0.081360732,Difference,7
+Mongolia,MNG,2023,0.079585929,Difference,8
+Hong Kong,HKG,2023,0.07418761,Difference,9
+Jamaica,JAM,2023,0.071723991,Difference,10
+Zimbabwe,ZWE,2023,0.070896331,Difference,11
+Colombia,COL,2023,0.070668192,Difference,12
+Philippines,PHL,2023,0.066811642,Difference,13
+Guatemala,GTM,2023,0.066370168,Difference,14
+Ecuador,ECU,2023,0.065417308,Difference,15
+Armenia,ARM,2023,0.061938329,Difference,16
+Libya,LBY,2023,0.059601875,Difference,17
+Laos,LAO,2023,0.058037874,Difference,18
+Grenada,GRD,2023,0.057330774,Difference,19
+Belize,BLZ,2023,0.056068737,Difference,20
+Cuba,CUB,2023,0.055531508,Difference,21
+Nicaragua,NIC,2023,0.055181614,Difference,22
+El Salvador,SLV,2023,0.055135431,Difference,23
+Costa Rica,CRI,2023,0.055021725,Difference,24
+Mauritius,MUS,2023,0.053653387,Difference,25
+Honduras,HND,2023,0.053492673,Difference,26
+Dominican Republic,DOM,2023,0.052211703,Difference,27
+China,CHN,2023,0.048628972,Difference,28
+Bhutan,BTN,2023,0.047543862,Difference,29
+Jordan,JOR,2023,0.046132065,Difference,30
+North Macedonia,MKD,2023,0.045100469,Difference,31
+Bolivia,BOL,2023,0.043844646,Difference,32
+Afghanistan,AFG,2023,0.043798411,Difference,33
+Saint Helena,SHN,2023,0.043257953,Difference,34
+Saint Kitts and Nevis,KNA,2023,0.043217158,Difference,35
+Dominica,DMA,2023,0.043216788,Difference,36
+British Virgin Islands,VGB,2023,0.043216097,Difference,37
+Turks and Caicos Islands,TCA,2023,0.043216097,Difference,37
+Bermuda,BMU,2023,0.043215422,Difference,39
+Curacao,CUW,2023,0.043215074,Difference,40
+Bonaire Sint Eustatius and Saba,BES,2023,0.043214921,Difference,41
+Saint Vincent and the Grenadines,VCT,2023,0.043214737,Difference,42
+Saint Lucia,LCA,2023,0.043214498,Difference,43
+Sint Maarten (Dutch part),SXM,2023,0.04321417,Difference,44
+Anguilla,AIA,2023,0.04321402,Difference,45
+Aruba,ABW,2023,0.04321402,Difference,45
+Antigua and Barbuda,ATG,2023,0.043213641,Difference,47
+Montserrat,MSR,2023,0.043211035,Difference,48
+Saint Pierre and Miquelon,SPM,2023,0.043200841,Difference,49
+Bahamas,BHS,2023,0.0431734,Difference,50
+Barbados,BRB,2023,0.042357716,Difference,51
+Haiti,HTI,2023,0.041728274,Difference,52
+Iceland,ISL,2023,0.041294483,Difference,53
+Central African Republic,CAF,2023,0.039516049,Difference,54
+Sao Tome and Principe,STP,2023,0.039510807,Difference,55
+Madagascar,MDG,2023,0.038735328,Difference,56
+Mexico,MEX,2023,0.037151269,Difference,57
+Brunei,BRN,2023,0.036565222,Difference,58
+Nepal,NPL,2023,0.036561179,Difference,59
+Iraq,IRQ,2023,0.0302356,Difference,60
+Zambia,ZMB,2023,0.030197631,Difference,61
+Moldova,MDA,2023,0.029750058,Difference,62
+Lebanon,LBN,2023,0.029228449,Difference,63
+Cambodia,KHM,2023,0.02906166,Difference,64
+Singapore,SGP,2023,0.02882756,Difference,65
+Malta,MLT,2023,0.027402589,Difference,66
+Tunisia,TUN,2023,0.026458459,Difference,67
+Angola,AGO,2023,0.026188053,Difference,68
+Liechtenstein,LIE,2023,0.025547707,Difference,69
+Oman,OMN,2023,0.024873694,Difference,70
+Chad,TCD,2023,0.024855685,Difference,71
+Bahrain,BHR,2023,0.024536298,Difference,72
+Myanmar,MMR,2023,0.023721254,Difference,73
+Eswatini,SWZ,2023,0.022697909,Difference,74
+Namibia,NAM,2023,0.021875728,Difference,75
+Niue,NIU,2023,0.021857923,Difference,76
+Tuvalu,TUV,2023,0.021768103,Difference,77
+Cook Islands,COK,2023,0.02174462,Difference,78
+Tonga,TON,2023,0.021743922,Difference,79
+Vanuatu,VUT,2023,0.021743746,Difference,80
+Marshall Islands,MHL,2023,0.021743476,Difference,81
+French Polynesia,PYF,2023,0.021742961,Difference,82
+Maldives,MDV,2023,0.02174276,Difference,83
+Fiji,FJI,2023,0.021742599,Difference,84
+Solomon Islands,SLB,2023,0.021741991,Difference,85
+Palau,PLW,2023,0.021741828,Difference,86
+Samoa,WSM,2023,0.021741293,Difference,87
+Micronesia (country),FSM,2023,0.021740468,Difference,88
+Kiribati,KIR,2023,0.021738165,Difference,89
+Nauru,NRU,2023,0.021732177,Difference,90
+Wallis and Futuna,WLF,2023,0.021723196,Difference,91
+Iran,IRN,2023,0.021396708,Difference,92
+Georgia,GEO,2023,0.02097658,Difference,93
+Sri Lanka,LKA,2023,0.020823419,Difference,94
+Macao,MAC,2023,0.019934878,Difference,95
+Peru,PER,2023,0.019539947,Difference,96
+Tanzania,TZA,2023,0.018616514,Difference,97
+Kuwait,KWT,2023,0.01819023,Difference,98
+Botswana,BWA,2023,0.017896228,Difference,99
+Saudi Arabia,SAU,2023,0.017798066,Difference,100
+United Arab Emirates,ARE,2023,0.015074084,Difference,101
+Greenland,GRL,2023,0.014927684,Difference,102
+Papua New Guinea,PNG,2023,0.014806119,Difference,103
+Lesotho,LSO,2023,0.014664273,Difference,104
+Kyrgyzstan,KGZ,2023,0.011987339,Difference,105
+Malaysia,MYS,2023,0.011826008,Difference,106
+Andorra,AND,2023,0.010279792,Difference,107
+Tajikistan,TJK,2023,0.009879831,Difference,108
+Faroe Islands,FRO,2023,0.009654565,Difference,109
+Russia,RUS,2023,0.007621117,Difference,110
+Syria,SYR,2023,0.007484372,Difference,111
+Kenya,KEN,2023,0.006245713,Difference,112
+Uruguay,URY,2023,0.005895,Difference,113
+Brazil,BRA,2023,0.005434641,Difference,114
+Ethiopia,ETH,2023,0.004632999,Difference,115
+Paraguay,PRY,2023,0.003930102,Difference,116
+Burundi,BDI,2023,0.003414465,Difference,117
+Kazakhstan,KAZ,2023,0.002937258,Difference,118
+Suriname,SUR,2023,0.00290327,Difference,119
+Malawi,MWI,2023,0.002404176,Difference,120
+Rwanda,RWA,2023,-0.000346584,Difference,121
+Uzbekistan,UZB,2023,-0.002162368,Difference,122
+Canada,CAN,2023,-0.002383985,Difference,123
+Switzerland,CHE,2023,-0.002486068,Difference,124
+Democratic Republic of Congo,COD,2023,-0.003162228,Difference,125
+Cyprus,CYP,2023,-0.003237641,Difference,126
+Djibouti,DJI,2023,-0.003477913,Difference,127
+Australia,AUS,2023,-0.003616745,Difference,128
+Bangladesh,BGD,2023,-0.003829553,Difference,129
+Eritrea,ERI,2023,-0.004303493,Difference,130
+Uganda,UGA,2023,-0.004305657,Difference,131
+Croatia,HRV,2023,-0.004777998,Difference,132
+Somalia,SOM,2023,-0.004845368,Difference,133
+Seychelles,SYC,2023,-0.004845602,Difference,134
+Comoros,COM,2023,-0.004845692,Difference,135
+South Sudan,SSD,2023,-0.004845884,Difference,136
+Indonesia,IDN,2023,-0.005221602,Difference,137
+Palestine,PSE,2023,-0.005333583,Difference,138
+Albania,ALB,2023,-0.005623413,Difference,139
+Egypt,EGY,2023,-0.007974155,Difference,140
+South Africa,ZAF,2023,-0.008434594,Difference,141
+New Caledonia,NCL,2023,-0.009304008,Difference,142
+Cameroon,CMR,2023,-0.010395155,Difference,143
+Sudan,SDN,2023,-0.011791729,Difference,144
+Turkey,TUR,2023,-0.011955034,Difference,145
+Morocco,MAR,2023,-0.012055586,Difference,146
+Turkmenistan,TKM,2023,-0.01234191,Difference,147
+Latvia,LVA,2023,-0.01613785,Difference,148
+Guyana,GUY,2023,-0.022639307,Difference,149
+Nigeria,NGA,2023,-0.023018477,Difference,150
+Togo,TGO,2023,-0.023226397,Difference,151
+Israel,ISR,2023,-0.023901089,Difference,152
+Sweden,SWE,2023,-0.024500186,Difference,153
+Yemen,YEM,2023,-0.025373582,Difference,154
+Slovakia,SVK,2023,-0.025707632,Difference,155
+Montenegro,MNE,2023,-0.025991503,Difference,156
+East Timor,TLS,2023,-0.026465221,Difference,157
+Liberia,LBR,2023,-0.02661344,Difference,158
+Serbia,SRB,2023,-0.0266334,Difference,159
+United Kingdom,GBR,2023,-0.027684758,Difference,160
+Burkina Faso,BFA,2023,-0.02938615,Difference,161
+Thailand,THA,2023,-0.030027657,Difference,162
+Senegal,SEN,2023,-0.03047516,Difference,163
+Lithuania,LTU,2023,-0.030721893,Difference,164
+Ghana,GHA,2023,-0.031538334,Difference,165
+Mali,MLI,2023,-0.032450553,Difference,166
+Cote d'Ivoire,CIV,2023,-0.032852919,Difference,167
+United States,USA,2023,-0.032975833,Difference,168
+Ukraine,UKR,2023,-0.033061008,Difference,169
+Benin,BEN,2023,-0.034537998,Difference,170
+Algeria,DZA,2023,-0.034814569,Difference,171
+Guinea-Bissau,GNB,2023,-0.036047576,Difference,172
+Gambia,GMB,2023,-0.03604824,Difference,173
+Guinea,GIN,2023,-0.036048396,Difference,174
+Sierra Leone,SLE,2023,-0.036048405,Difference,175
+Cape Verde,CPV,2023,-0.036048471,Difference,176
+Mauritania,MRT,2023,-0.036048474,Difference,177
+Kosovo,OWID_KOS,2023,-0.036297011,Difference,178
+Niger,NER,2023,-0.036980988,Difference,179
+Bosnia and Herzegovina,BIH,2023,-0.03740956,Difference,180
+Luxembourg,LUX,2023,-0.038973582,Difference,181
+Mozambique,MOZ,2023,-0.040017957,Difference,182
+Argentina,ARG,2023,-0.040546315,Difference,183
+South Korea,KOR,2023,-0.040983344,Difference,184
+Denmark,DNK,2023,-0.041037392,Difference,185
+Japan,JPN,2023,-0.042512502,Difference,186
+Taiwan,TWN,2023,-0.045734986,Difference,187
+Norway,NOR,2023,-0.046731033,Difference,188
+New Zealand,NZL,2023,-0.047163804,Difference,189
+Austria,AUT,2023,-0.047342692,Difference,190
+Belarus,BLR,2023,-0.048726432,Difference,191
+Greece,GRC,2023,-0.049644415,Difference,192
+Congo,COG,2023,-0.053862594,Difference,193
+Trinidad and Tobago,TTO,2023,-0.054756157,Difference,194
+Spain,ESP,2023,-0.055576305,Difference,195
+Ireland,IRL,2023,-0.062067934,Difference,196
+Belgium,BEL,2023,-0.063297145,Difference,197
+Chile,CHL,2023,-0.063598286,Difference,198
+Romania,ROU,2023,-0.065120011,Difference,199
+Netherlands,NLD,2023,-0.067373174,Difference,200
+France,FRA,2023,-0.071637728,Difference,201
+Gabon,GAB,2023,-0.072624025,Difference,202
+Italy,ITA,2023,-0.07987635,Difference,203
+Poland,POL,2023,-0.081769123,Difference,204
+Portugal,PRT,2023,-0.085012696,Difference,205
+Czechia,CZE,2023,-0.099714009,Difference,206
+Equatorial Guinea,GNQ,2023,-0.100279862,Difference,207
+Pakistan,PAK,2023,-0.103503595,Difference,208
+Hungary,HUN,2023,-0.103749022,Difference,209
+Slovenia,SVN,2023,-0.108091453,Difference,210
+Germany,DEU,2023,-0.112171826,Difference,211
+Finland,FIN,2023,-0.130475431,Difference,212
+Estonia,EST,2023,-0.14786177,Difference,213
+Bulgaria,BGR,2023,-0.231490628,Difference,214
